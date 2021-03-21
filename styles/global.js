@@ -2,8 +2,7 @@ import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${({ theme = {} }) => {
-    const { colors = {} } = theme;
-    console.log('🚀 ~ file: global.js ~ line 6 ~ colors', colors);
+    const { colors = {}, breakpoint = '' } = theme;
     return css`
       /* BEGIN RESET */
 
@@ -95,12 +94,22 @@ const GlobalStyle = createGlobalStyle`
         font-size: 0.9375rem; /* 15px */
       }
       body {
-        background: ${colors.neutral.white};
+        background-color: ${colors.neutral.white};
+        background-image: url("/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 374px 232px;
+        background-position: top 0 left 0;
         color: ${colors.primary.dark};
+
+        @media ${breakpoint} {
+          background-image: url("/bg-pattern-top-desktop.svg"), url("/bg-pattern-bottom-desktop.svg");
+          background-size: 584px 362px, 1085px 673px;
+          background-position: top 0 left 0, bottom 0 right 0;
+        }
       }
 
       h1 {
-        font-size: 2.10rem;
+        font-size: 2.1rem;
         line-height: 1.025;
       }
     `;

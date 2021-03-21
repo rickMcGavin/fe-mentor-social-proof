@@ -18,6 +18,12 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Overview
 
+This felt like one of the most realistic so far of as in it is a lot like something I'd be asked to build out or have built out.
+
+I've also decided that since you can get really lost deep in these projects making every screen size look good, and you would want
+to do exactly that for a production quality website or app. In the cases of some of the projects I'm deciding the primary 2-3 screen
+sizes given will be just fine to get right, and the other may not be great.
+
 ### The challenge
 
 Users should be able to:
@@ -31,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/rickMcGavin/fe-mentor-social-proof](https://github.com/rickMcGavin/fe-mentor-social-proof)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://fe-mentor-social-proof.vercel.app/](https://fe-mentor-social-proof.vercel.app/)
 
 ## My process
 
